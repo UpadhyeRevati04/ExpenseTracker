@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f765a4, #e8e8e8); /* Subtle gradient */
+    color: #333;
+}
+
+.hero {
+    background: #f0bcbc; /* Clean white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Professional box shadow */
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.hero img{
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
+
+.hero img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+    background: #fff1f1; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 { 
+	text-align: center; 
+	margin-bottom: 20px; 
+	margin-top: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #0c0c0c;
+} 
+
+#date{
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+	font-size: 25px;
+	font-weight: 1000;
+	margin-right: 200px;
+}
+#btn {
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 15px;
+  }
+  
+  /* Darker background on mouse-over */
+#btn:hover {
+	background-color: RoyalBlue;
+}
+#taskbar{
+	display: flex;
+	margin-top: 20px;
+}
+
+	
+
+form { 
+	display: flex; 
+	/*justify-content: space-evenly; */
+	margin-bottom: 20px; 
+	margin-top: 50px;
+} 
+
+input[type="text"], 
+input[type="number"] { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	outline: none; 
+} 
+
+input[type="text"]::placeholder, 
+input[type="number"]::placeholder { 
+	color: #999; 
+} 
+
+button { 
+	padding: 10px 20px; 
+	background-color: #4caf50; 
+	color: white; 
+	border: none; 
+	border-radius: 4px; 
+	cursor: pointer; 
+	font-size: 15px;
+	margin-left: 15px;
+} 
+
+button:hover { 
+	background-color: #45a049; 
+} 
+
+.expense-table { 
+	border: 1px solid #ddd; 
+	border-radius: 8px; 
+	overflow: hidden; 
+	width: 80%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+} 
+
+thead th { 
+	background-color: #f2f2f2; 
+	padding: 10px; 
+	text-align: left; 
+} 
+
+tbody td { 
+	padding: 10px; 
+	border-top: 1px solid #ddd; 
+} 
+
+.delete-btn { 
+	color: red; 
+	cursor: pointer; 
+} 
+
+.total-amount { 
+	display: flex;
+	justify-content: space-between;
+	padding: 10px; 
+	text-align: right; 
+	background-color: #f2f2f2; 
+}
+#clrBtn{
+	cursor: pointer;
+	color: red;
+	font-size: 300;
+}
+
+.cross{
+	text-decoration: line-through;
+}

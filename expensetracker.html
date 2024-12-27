@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="expenses.css" />
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>Expense Tracker</h1>
+            <div id="taskbar">
+                <p id="date"></p>
+                <button id="btn" type="button" onclick="downloadPDF()">
+                    <i class="fa fa-download"></i> Download PDF
+                </button>
+            </div>
+            <form id="expense-form">
+				<input type="text" id="expense-name" placeholder="Expense Name" required />
+				<input type="number" id="expense-amount" placeholder="Amount" required />
+				<select id="expense-type">
+					<option value="expense">Expense</option>
+					<option value="income">Income</option>
+				</select>
+				<button type="submit">Add Expense / Income</button>
+			</form>
+					
+            <div class="expense-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Expense Name</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-list"></tbody>
+                </table>
+                <div class="total-amount">
+                    <p id="clrBtn">Clear All</p>
+                    <strong>Total: ₹<span id="total-amount">0</span></strong>
+                </div>
+            </div>
+            <div class="budget-warning" id="budget-warning" style="display: none; color: red; font-weight: bold;">
+                Warning: You have exceeded your budget limit!
+            </div>
+        </div>
+    </div>
+    <script src="expensetracker.js"></script>
+</body>
+</html>
